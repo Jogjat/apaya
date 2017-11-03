@@ -32,3 +32,6 @@ Route::get('coba2', function () {
 Route::post('pesan/kirim', function () {
     return view('pesan_kirim');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

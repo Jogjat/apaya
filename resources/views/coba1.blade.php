@@ -12,3 +12,7 @@
 @section('content')
 Halo ini coba 1
 @endsection
+@section('sidebar')
+	<li class="active"><a href="coba1"><i class="fa fa-comment"></i> <span>Coba 1</span></a></li>
+	<li ><a href="coba2"><i class="fa fa-comment"></i> <span>Coba 2</span></a></li>
+@endsection
