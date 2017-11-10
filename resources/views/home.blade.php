@@ -1,6 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
+@section('logout')
+<a href="{{ route('user.logout') }}"
+ onclick="event.preventDefault();
+ document.getElementById('logout-form').submit();">
+ Logout
+</a>
+<form id="logout-form" action="{{ route('user.logout') }}" method="POST" style="display: none;">
+ {{ csrf_field() }}
+</form>
+@endsection
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
